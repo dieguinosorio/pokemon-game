@@ -1,10 +1,14 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <PokemonPage/>
 </template>
+<script>
+import PokemonPage from './pages/PokemonPage.vue'
+export default {
+  components:{
+    PokemonPage
+  }
+}
+</script>
 
 <style>
 #app {
